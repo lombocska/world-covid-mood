@@ -1,0 +1,63 @@
+twitter:
+  indexer:
+    twitter-api:
+      consumer-key: ${TWITTER_INDEXER_CONSUMER_KEY}
+      consumer-secret: ${TWITTER_INDEXER_CONSUMER_SECRET}
+      token: ${TWITTER_INDEXER_TOKEN}
+      secret: ${TWITTER_INDEXER_SECRET}
+      resource-url: https://api.twitter.com
+
+      #In FeignAuthConfiguration, OAuth2ProtectedResourceDetails need these props
+      client-id: ${twitter.indexer.api.consumerKey}
+      client-secret: ${twitter.indexer.api.consumerSecret}
+      access-token-uri: ${twitter.indexer.api.resourceUrl}/oauth2/token
+    capacity: ${TWITTER_INDEXER_CAPACITY:10}
+    # list of terms to poll from twitter (should be colon separated)
+    terms: ${TWITTER_INDEXER_TERMS:coronavirus}
+    scheduling:
+      enabled: ${TWITTER_INDEXER_JOB_ENABLED:false}
+      cron: ${TWITTER_INDEXER_JOB_CRON:0 * * * * *} # by default every minute
+    shedlock:
+      min-time-lock-should-kept: ${SHEDLOCK_MIN_TIME_LOCK_KEPT:PT10S}
+      max-time-lock-should-kept: ${SHEDLOCK_MAX_TIME_LOCK_KEPT:PT30S}
+    kafka:
+      topic: twitter-domain-event
+
+
+spring:
+  application:
+    name: '@name@'
+    version: '@version@'
+  datasource:
+    pool-prepared-statements: true
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/${DB_NAME:twitter-indexer}?useUnicode=true&characterEncoding=utf8
+    username: ${DB_USERNAME:twitter-indexer}
+    password: ${DB_PASSWORD:twitter-indexer}
+  liquibase:
+    change-log: classpath:db/liquibase-changelog.xml
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      transaction-id-prefix: tx-${spring.application.name}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      compression-type: snappy
+      batch-size: 32768  #32 KB
+      properties:
+        linger.ms: 20
+
+management:
+  metrics.export.graphite:
+    host: ${GRAPHITE_HOST:localhost}
+    port: ${GRAPHITE_PORT:2003}
+    global-prefix: ${spring.application.name}
+    protocol: PLAINTEXT
+    step: 10s
+
+server:
+  port: ${SERVER_PORT:8080}
+
+logging:
+  level:
+     io.lombocska: DEBUG

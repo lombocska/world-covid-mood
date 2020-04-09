@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="01" author="monika.lombos">
+        <createTable tableName="shedlock"
+                     remarks="ShedLock does one and only one thing. It makes sure your scheduled tasks are executed at most once at the same time.">
+            <column name="name" type="varchar(64)">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="lock_until" type="timestamp(3)">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="locked_at" type="timestamp(3)">
+                <constraints nullable="true" unique="false"/>
+            </column>
+            <column name="locked_by" type="varchar(255)">
+                <constraints nullable="true" unique="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,152 @@
+{
+  "created_at": "Mon Mar 23 10:26:37 +0000 2020",
+  "id": 1242035010712096768,
+  "id_str": "1242035010712096768",
+  "text": "Tante le raccolte fondi contro il Coronavirus. Ognuno combatte con le armi che ha, noi giovani doniamo\n@20Ventiblog\u2026 https:\/\/t.co\/Bq8q45lOo0",
+  "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+  "truncated": true,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 1115218106132119552,
+    "id_str": "1115218106132119552",
+    "name": "Quotidiano del Sud - L'ALTRAVOCE dell'Italia",
+    "screen_name": "LAltravoce",
+    "location": null,
+    "url": "https:\/\/www.quotidianodelsud.it\/sezioni\/laltravocedellitalia\/",
+    "description": "L'Altravoce dell'Italia, una voce nuova e diversa per raccontare il Sud a tutta l'Italia.",
+    "translator_type": "none",
+    "protected": false,
+    "verified": false,
+    "followers_count": 431,
+    "friends_count": 211,
+    "listed_count": 4,
+    "favourites_count": 51,
+    "statuses_count": 979,
+    "created_at": "Mon Apr 08 11:41:31 +0000 2019",
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": false,
+    "lang": null,
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "F5F8FA",
+    "profile_background_image_url": "",
+    "profile_background_image_url_https": "",
+    "profile_background_tile": false,
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/1115225453005029377\/6mFm_MSl_normal.png",
+    "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/1115225453005029377\/6mFm_MSl_normal.png",
+    "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/1115218106132119552\/1554725411",
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "is_quote_status": false,
+  "extended_tweet": {
+    "full_text": "Tante le raccolte fondi contro il Coronavirus. Ognuno combatte con le armi che ha, noi giovani doniamo\n@20Ventiblog per #laltravocedeiventenni \n#COVID\u30fc19 #Gofundme\nhttps:\/\/t.co\/WgQmF641dW",
+    "display_text_range": [
+      0,
+      187
+    ],
+    "entities": {
+      "hashtags": [
+        {
+          "text": "laltravocedeiventenni",
+          "indices": [
+            120,
+            142
+          ]
+        },
+        {
+          "text": "COVID\u30fc19",
+          "indices": [
+            144,
+            153
+          ]
+        },
+        {
+          "text": "Gofundme",
+          "indices": [
+            154,
+            163
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https:\/\/t.co\/WgQmF641dW",
+          "expanded_url": "https:\/\/www.quotidianodelsud.it\/laltravocedellitalia\/laltravoce-ventenni\/2020\/03\/23\/tante-le-raccolte-fondi-contro-il-coronavirus-ognuno-combatte-con-le-armi-che-ha-noi-giovani-doniamo",
+          "display_url": "quotidianodelsud.it\/laltravocedell\u2026",
+          "indices": [
+            164,
+            187
+          ]
+        }
+      ],
+      "user_mentions": [
+        {
+          "screen_name": "20Ventiblog",
+          "name": "Venti",
+          "id": 2472881215,
+          "id_str": "2472881215",
+          "indices": [
+            103,
+            115
+          ]
+        }
+      ],
+      "symbols": []
+    }
+  },
+  "quote_count": 0,
+  "reply_count": 0,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "entities": {
+    "hashtags": [],
+    "urls": [
+      {
+        "url": "https:\/\/t.co\/Bq8q45lOo0",
+        "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/1242035010712096768",
+        "display_url": "twitter.com\/i\/web\/status\/1\u2026",
+        "indices": [
+          117,
+          140
+        ]
+      }
+    ],
+    "user_mentions": [
+      {
+        "screen_name": "20Ventiblog",
+        "name": "Venti",
+        "id": 2472881215,
+        "id_str": "2472881215",
+        "indices": [
+          103,
+          115
+        ]
+      }
+    ],
+    "symbols": []
+  },
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "it",
+  "timestamp_ms": "1584959197105"
+}

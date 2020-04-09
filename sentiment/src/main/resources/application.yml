@@ -1,0 +1,38 @@
+twitter:
+  consumer:
+    kafka:
+      topic: twitter-domain-event
+  processor:
+    kafka:
+      topic: twitter-enriched-domain-event
+
+spring:
+  application:
+    name: '@name@'
+    version: '@version@'
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      transaction-id-prefix: tx-${spring.application.name}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      compression-type: snappy
+      batch-size: 32768  #32 KB
+      properties:
+        linger.ms: 20
+
+management:
+  metrics.export.graphite:
+    host: ${GRAPHITE_HOST:localhost}
+    port: ${GRAPHITE_PORT:2003}
+    global-prefix: ${spring.application.name}
+    protocol: PLAINTEXT
+    step: 10s
+
+server:
+  port: ${SERVER_PORT:8081}
+
+logging:
+  level:
+    io.lombocska: DEBUG

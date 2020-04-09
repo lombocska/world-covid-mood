@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  twitter-indexer:
+    container_name: twitter-indexer
+    networks:
+      - docker_twitter-network
+    build: ./../.
+    env_file:
+      - .env
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      TWITTER_INDEXER_JOB_ENABLED: "true"
+      TWITTER_INDEXER_CAPACITY:  10
+      DB_HOST: twitter-indexer-postgres
+      DB_PORT: 5432
+      DB_NAME: twitter-indexer
+      DB_USERNAME: twitter-indexer
+      DB_PASSWORD: twitter-indexer
+      GRAPHITE_HOST: graphite
+      GRAPHITE_PORT: 2003
+      SERVER_PORT: 8080
+    ports: [8081:8080]
+
+networks:
+  docker_twitter-network:
+    external: true
