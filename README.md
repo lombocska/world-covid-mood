@@ -1,4 +1,4 @@
-# WORLD COVID MOOD
+# WORLD COVID MOOD [AKA TWEET SENTIMENT ANALYSIS]
 
 ![covid](./covid.svg)
 
@@ -36,22 +36,14 @@ This project aims to compare the current tweets' stream based on different NLP a
 
 
 
-### TBD
+### Contribute !
 
 
-TODO
-- [ ] metrics should be fine-grained
-- [ ] readme should be proper (usage, fire up, technology that has used)
-- [X] more kafka brokers into docker compose
-- [ ] nice article about it
-- [ ] which module does what
-- [X] maybe io.lombocska.sentiment kafka should be a stream and for ES saving there should be a consumer
-- [X] kafka sink to ES? (ksql)
 - [ ] schema registry?
-- [ ] role based access control https://www.elastic.co/guide/en/kibana/current/development-security-rbac.html
-- [ ] twitter get bounding box based on location and cache it for not overrun on the ratelimit (app 100.000/24 hours) -> szarjanak sunt a 3 fele authentikaciojukkal
-- [X] feign has used also
-
+- [ ] metrics should be fine-grained in graphite
+- [ ] mount logging into kibana via filebeat
+- [X] more kafka brokers into docker compose
+- [X] kafka sink to ES? (ksql)
 
 
 
