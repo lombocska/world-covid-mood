@@ -1,4 +1,4 @@
-package io.lombocska.sentiment.model;
+package io.lombocska.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

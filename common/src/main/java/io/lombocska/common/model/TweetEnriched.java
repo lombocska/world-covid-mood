@@ -1,6 +1,5 @@
-package io.lombocska.sentiment.model;
+package io.lombocska.common.model;
 
-import io.lombocska.common.model.Tweet;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

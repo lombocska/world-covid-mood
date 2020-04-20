@@ -1,13 +1,13 @@
-package io.lombocska.twitterindexer;
+package io.lombocska.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TwitterIndexerApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TwitterIndexerApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 
 }

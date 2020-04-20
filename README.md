@@ -42,6 +42,7 @@ This project aims to compare the current tweets' stream based on different NLP a
 - [ ] schema registry?
 - [ ] metrics should be fine-grained in graphite
 - [ ] mount logging into kibana via filebeat
+- [ ] es indexing based on sentiment analysis
 - [X] more kafka brokers into docker compose
 - [X] kafka sink to ES? (ksql)
 

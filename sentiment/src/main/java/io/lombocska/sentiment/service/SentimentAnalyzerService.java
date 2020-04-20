@@ -1,6 +1,6 @@
 package io.lombocska.sentiment.service;
 
-import io.lombocska.sentiment.model.SentimentResult;
+import io.lombocska.common.model.SentimentResult;
 
 import java.util.List;
 

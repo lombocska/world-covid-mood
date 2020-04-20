@@ -2,7 +2,7 @@ package io.lombocska.sentiment.dispatcher;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.lombocska.sentiment.model.TweetEnriched;
+import io.lombocska.common.model.TweetEnriched;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

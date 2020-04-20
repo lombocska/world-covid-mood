@@ -1,9 +1,9 @@
 package io.lombocska.sentiment.model.stanford_nlp;
 
 
-import io.lombocska.sentiment.model.Classification;
-import io.lombocska.sentiment.model.SentimentAnalysisType;
-import io.lombocska.sentiment.model.SentimentResult;
+import io.lombocska.common.model.Classification;
+import io.lombocska.common.model.SentimentAnalysisType;
+import io.lombocska.common.model.SentimentResult;
 import lombok.Getter;
 import lombok.Setter;
 

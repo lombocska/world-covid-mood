@@ -7,7 +7,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
-import io.lombocska.sentiment.model.SentimentResult;
+import io.lombocska.common.model.SentimentResult;
 import io.lombocska.sentiment.model.stanford_nlp.StanfordNLPSentimentClassification;
 import io.lombocska.sentiment.model.stanford_nlp.StanfordNLPSentimentResult;
 import lombok.extern.slf4j.Slf4j;

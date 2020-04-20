@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>world-covid-mood</artifactId>
+        <groupId>io.lombocska</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>io.lombocska</groupId>
+    <artifactId>api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>api</name>
+    <description>API layer getting easily the data from ES.</description>
+
+    <properties>
+        <elasticsearch-rest-high-level-client.version>6.8.1</elasticsearch-rest-high-level-client.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- NO-SQL DATABASE  -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>${elasticsearch-rest-high-level-client.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>

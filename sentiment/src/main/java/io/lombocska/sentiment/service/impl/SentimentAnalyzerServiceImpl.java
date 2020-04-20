@@ -1,6 +1,6 @@
 package io.lombocska.sentiment.service.impl;
 
-import io.lombocska.sentiment.model.SentimentResult;
+import io.lombocska.common.model.SentimentResult;
 import io.lombocska.sentiment.service.SentimentAnalyzerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

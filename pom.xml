@@ -15,6 +15,7 @@
         <module>sentiment</module>
         <module>common</module>
         <module>es-sink</module>
+        <module>api</module>
     </modules>
 
     <parent>
@@ -45,7 +46,6 @@
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
-
 
         <!--  UTIL  -->
         <dependency>
